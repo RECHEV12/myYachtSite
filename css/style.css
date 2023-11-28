@@ -1,0 +1,243 @@
+html {
+    background-image: url("../images/woodFloor.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+div {
+    font-family: "Liberation Sans";
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+
+}
+
+.cantEdit {
+    font-weight: bold;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.mainRoom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    background-image: url("../images/red.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    width: 64%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.scoreBoard {
+    width: 30%;
+    padding: 10px;
+    background-color: ivory;
+    border: black 1px solid;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: ivory;
+    padding: 100px;
+
+}
+
+
+table > thead th:nth-child(1) {
+    width: 40%;
+
+}
+
+table > thead th:nth-child(2), table > thead th:nth-child(3) {
+    border: black 3px solid;
+    width: 30%;
+
+}
+
+table > tbody tr {
+    border: black 3px solid;
+
+}
+
+table > tbody td {
+    border: black 3px solid;
+
+}
+
+.user_icon {
+    height: 25%;
+
+}
+
+.user_icon > div {
+    text-align: center;
+
+}
+
+/*userName태그들*/
+.user_icon > div:nth-child(1) {
+
+    height: 17%;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+.user_lockDice {
+    height: 83%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+.user_lockDice > img {
+    width: calc(20%);
+
+}
+
+
+.rollDicePlace {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.rollDicePlace > div {
+
+}
+
+.showNowUser {
+    height: 10%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.diceMain {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.showAlert {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.chanceRoll{
+    height: 10%;
+}
+.rollDicePlace > div:nth-child(4) {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chance {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.roll {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    box-shadow: 0px 0px 15px 1px ghostwhite;
+}
+
+.confirmBtn {
+    box-shadow: 0px 0px 15px 1px white;
+
+}
+
+.diceMain > img {
+    width: calc(20%);
+}
+
+.inputName {
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px double black;
+    background-color: ghostwhite;
+    text-align: center;
+
+}
+
+.inputName > div {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.aceDesc {
+    padding: 15px 20px;
+    background-color: #444444;
+    border-radius: 5px;
+    color: #ffffff;
+    position: absolute;
+    display: none;
+}
+
+
+tbody > tr > td:hover {
+    .description {
+        display: block;
+    }
+}
+
+tbody > tr > td > a {
+    padding: 5px 10px;
+    background-color: #444444;
+    border-radius: 5px;
+    color: #ffffff;
+    position: absolute;
+    font-weight: bold;
+    display: none;
+
+}

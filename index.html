@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="inputName" style="display: block">
+        <div>
+            <div>첫번째 유저의 이름을 입력해주세요</div>
+            <input type="text">
+            <div>두번째 유저의 이름을 입력해주세요</div>
+            <input type="text">
+            <button class="confirmBtn">OK</button>
+        </div>
+    </div>
+    <div class="title">
+        YACHT DICE
+    </div>
+    <div class="mainRoom">
+
+        <div class="main">
+            <div class="user_icon">
+                <div class="userA_name"></div>
+                <div class="user_lockDice">
+                </div>
+
+            </div>
+
+            <div class="rollDicePlace">
+                <div class="showNowUser"></div>
+                <div class="diceMain">
+                    <img src="images/1.jpg">
+                    <img src="images/2.jpg">
+                    <img src="images/3.jpg">
+                    <img src="images/4.jpg">
+                    <img src="images/5.jpg">
+                </div>
+                <div class="showAlert"></div>
+                <div class="chanceRoll">
+                    <div class="chance"> Chance : 3</div>
+                    <button class="roll" onclick="rollingDice()">ROLL</button>
+                </div>
+            </div>
+
+
+            <div class="user_icon">
+                <div class="userB_name"></div>
+                <div class="user_lockDice"></div>
+            </div>
+
+        </div>
+
+
+        <div class="scoreBoard">
+            <table>
+                <thead>
+                <tr>
+                    <th>
+                        <div class="round">Round 1/12</div>
+                        <div>categories</div>
+                    </th>
+                    <th class="scoreName">USER A</th>
+                    <th class="scoreName">USER B</th>
+                </tr>
+                </thead>
+                <tbody class="rowBody">
+                <tr class="canCal">
+                    <td>
+                        <a class="description">나온 숫자 중 1의 합</a>
+                        Aces
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="canCal">
+                    <td>Twos
+                        <a class="description">나온 숫자 중 2의 합</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="canCal">
+                    <td>Threes
+                        <a class="description">나온 숫자 중 3의 합</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="canCal">
+                    <td>Fours
+                        <a class="description">나온 숫자 중 4의 합</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="canCal">
+                    <td>Fives
+                        <a class="description">나온 숫자 중 5의 합</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="canCal">
+                    <td>Sixes
+                        <a class="description">나온 숫자 중 6의 합</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="cantEdit">
+                    <td>Sub Total
+                        <a class="description">aces~sixes의 합</a>
+                    </td>
+                    <td>0/63</td>
+                    <td>0/63</td>
+                </tr>
+                <tr class="cantEdit">
+                    <td>BONUS
+                        <a class="description">Sub Total 점수가 63점이 넘었을 때 35점</a>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr class="canCal">
+                    <td>Choices
+                        <a class="description">나온 숫자의 총합</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="canCal">
+                    <td>Four of a Kind
+                        <a class="description">같은 숫자가 4개 이상일 때, 모든 숫자의 합</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="canCal">
+                    <td>Full House
+                        <a class="description">같은 숫자 3개와 같은 숫자 2개의 합</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="canCal">
+                    <td>S.Straight
+                        <a class="description">연속되는 숫자가 4개 이상일 때 15점</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="canCal">
+                    <td>L.Straight
+                        <a class="description">연속되는 숫자가 5개일 때 30점</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="canCal">
+                    <td>YACHT
+                        <a class="description">같은 숫자가 5개일 때 50점</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="cantEdit">
+                    <td>TOTAL
+                        <a class="description">점수의 총합</a>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/script.js"></script>
+<script src="js/cal_dice.js"></script>
+</html>
